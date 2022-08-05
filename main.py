@@ -13,7 +13,6 @@ score_list = []
 
 start_font = pygame.font.Font('freesansbold.ttf', 32)
 final_score_font = pygame.font.Font('freesansbold.ttf', 32)
-chutiya_font = pygame.font.Font('freesansbold.ttf', 32)
 
 
 def starting():
@@ -24,11 +23,6 @@ def starting():
 def final_score_ren():
     score_ms = final_score_font.render(str(score_list) + "ms", True, (0, 0, 0))
     screen.blit(score_ms, (550, 500))
-
-
-def chutiya():
-    chu_message = chutiya_font.render("CHUTIYA HAI KYA", True, (0, 0, 0))
-    screen.blit(chu_message, (650, 500))
 
 
 run = True
